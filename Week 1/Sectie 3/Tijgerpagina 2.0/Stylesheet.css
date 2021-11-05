@@ -1,0 +1,20 @@
+.titel {
+  color: green;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.foto {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tekst {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tiger {
+  color: green;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 100px;
+}
