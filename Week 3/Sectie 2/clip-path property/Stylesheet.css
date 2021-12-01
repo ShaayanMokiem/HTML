@@ -1,0 +1,8 @@
+img.tijger {
+  height: 800ox;
+  width: 800px;
+  position: relative;
+  left: 350px;
+  top: 100px;
+  clip-path: polygon(0% 0%, 500% 100%, 0% 100%, 0% 400%);
+}
