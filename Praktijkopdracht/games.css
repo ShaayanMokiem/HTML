@@ -1,0 +1,168 @@
+* {
+  background-color: rgb(0, 0, 255);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 10;
+}
+
+.page {
+  width: 15%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  padding: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.page:hover {
+  transform: scale(1.2);
+  transition: transform .2s;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.3fr repeat(2, 1fr);
+  width: 50%;
+  height: 800px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  grid-auto-flow: dense;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.games-text {
+  font-size: 70px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-column: span 2;
+  background-color: rgb(0, 0, 255);
+  padding: 5px;
+  color: white;
+}
+
+.gt-sport {
+  background-image: url(./Images/gtsport.jpg);
+  background-size: cover;
+}
+
+.gt6 {
+  background-image: url(./Images/gt6.jpg);
+  background-size: cover;
+}
+
+.gt5 {
+  background-image: url(./Images/gt5.jpg);
+  background-size: cover;
+}
+
+.gt4 {
+  background-image: url(./Images/gt4.png);
+  background-size: cover;
+}
+
+.games-img:hover {
+  padding: 10px;
+  transform: scale(1.2);
+}
+
+.footer {
+
+  display: grid;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-content {
+  background-color: red;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer-text {
+  background-color: red;
+  color: white;
+}
+
+/*Pc Screen*/
+
+@media screen and (max-width:1300px) and (min-width: 1151px) {
+  .games {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+/*Tablet Screen*/
+
+@media screen and (max-width: 1150px) and (min-width: 481px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .page {
+    margin-left: 25px;
+  }
+
+  .games {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 35%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.3fr repeat(4, 1fr);
+    height: 1700px;
+  }
+
+  .games-img {
+    height: auto;
+  }
+
+  .games-text {
+    grid-column: span 1;
+  }
+
+}
+
+/*Phone Screen*/
+
+@media screen and (max-width: 480px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .page {
+    margin-left: 5px;
+  }
+
+  .games {
+    width: 25%;
+    margin-left: 25%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.3fr repeat(4, 1fr);
+    height: 80%;
+  }
+
+  .games-text {
+    grid-column: span 1;
+  }
+
+}
